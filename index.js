@@ -11,7 +11,7 @@ app.use(cors());
 
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:5173", // Your React app's origin
+    origin: process.env.CORS_ORIGIN || 'http://localhost:5173', // Use environment variable for deployed origin
     methods: ["GET", "POST"]
   }
 });

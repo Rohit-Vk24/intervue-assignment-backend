@@ -28,7 +28,7 @@ let connectedClients = {};
 // { pollId: { question: string, options: [], results: {}, duration: number, timestamp: number }, ... }
 let pollHistory = [];
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 10000;
 
 // --- Helper Functions ---
 function broadcastPollState() {
